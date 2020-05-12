@@ -1804,7 +1804,7 @@ __Usage__::
 
 __Details__::
 
-similar to the <<reference-containswhere,containsWhere>> operator, this operator is provided with a closure.
+Similar to the <<reference-containswhere,containsWhere>> operator, this operator is provided with a closure.
 The type of the incoming value to this closure must match the Output type of the upstream publisher, and the closure must return a Boolean.
 
 The operator will compare any incoming values, only responding when the upstream publisher sends a `.finished` completion.
@@ -1832,7 +1832,7 @@ __Usage__::
 
 __Details__::
 
-similar to the <<reference-trycontainswhere,tryContainsWhere>> operator, you provide this operator with a closure which may also throw an error.
+Similar to the <<reference-trycontainswhere,tryContainsWhere>> operator, you provide this operator with a closure which may also throw an error.
 The type of the incoming value to this closure must match the Output type of the upstream publisher, and the closure must return a Boolean.
 
 The operator will compare any incoming values, only responding when the upstream publisher sends a `.finished` completion.
@@ -3852,7 +3852,7 @@ cancellablePublisher.cancel() // when invoked, this invalidates the pipeline
 // no further data will be received by the sink
 ----
 
-similar to publishers having a type-erased struct <<reference-erasetoanypublisher,AnyPublisher>> to expose publishers through an API, subscribers have an equivalent: <<reference-anycancellable,AnyCancellable>>. This is often used with `sink` to convert the resulting type into `AnyCancellable`.
+Similar to publishers having a type-erased struct <<reference-erasetoanypublisher,AnyPublisher>> to expose publishers through an API, subscribers have an equivalent: <<reference-anycancellable,AnyCancellable>>. This is often used with `sink` to convert the resulting type into `AnyCancellable`.
 
 [#reference-onreceive]
 === onReceive
